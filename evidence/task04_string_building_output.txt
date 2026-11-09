@@ -1,0 +1,7 @@
+Q4 benchmark (seconds; machine-dependent; average of 3 runs)
+n=  1000: +==0.000112 | join=0.000009 | f-string=0.000147
+Output characters: 13690
+n= 10000: +==0.001067 | join=0.000192 | f-string=0.001076
+Output characters: 146890
+n=200000: +==0.022235 | join=0.001976 | f-string=0.018236
+Output characters: 3248890
