@@ -25,7 +25,4 @@ python Task05/task05_functions_scope.py
 python Task06/task06_recursion.py
 python Task07/task07_redesign.py
 ```
-No third-party libraries are required. Q4 benchmark times depend on your computer and Python build; re-run locally and include your own measured values and terminal screenshots.
 
-## GitHub submission
-Create a repository named `CSA08-1924260130A-Assignment2`. Commit progressively (at least one commit per task). Add course faculty as collaborator if private. Paste the working repository URL on the report cover page and in the SIMATS submission field.
