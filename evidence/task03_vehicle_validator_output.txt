@@ -1,0 +1,23 @@
+tn 09 ab 1234      -> TN09AB1234   valid   receipt: TN 09 AB 1234
+KA-01-M-0007       -> KA01M0007    valid   receipt: KA 01 M 0007
+TN9AB1234          -> TN9AB1234    INVALID receipt: -
+TN 22 1234 AB      -> TN221234AB   INVALID receipt: -
+MH 12 Q 9876       -> MH12Q9876    valid   receipt: MH 12 Q 9876
+DL 8C AB 1234      -> DL8CAB1234   INVALID receipt: -
+\nString notes:
+Strings are immutable: methods create a new string rather than changing the original.
+text.upper() returns HELLO while text remains hello
+9-character s[-4:] B123 | s[4:-4] A
+10-character s[-4:] 1234 | s[4:-4] AB
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

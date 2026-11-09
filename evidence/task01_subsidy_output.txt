@@ -1,0 +1,9 @@
+Household | Units | Ration card | Age > 80 | Separate-if result | Elif result
+H1        |    80 | False       | False    | Full subsidy | Full subsidy
+H2        |   100 | True        | False    | Full subsidy, Partial subsidy | Full subsidy
+H3        |   101 | True        | False    | Partial subsidy | Partial subsidy
+H4        |   150 | False       | False    | No subsidy | No subsidy
+H5        |   200 | True        | False    | Partial subsidy | Partial subsidy
+H6        |   201 | False       | False    | No subsidy | No subsidy
+H7        |   250 | False       | True     | Special subsidy | Special subsidy
+H8        |   250 | True        | False    | No subsidy | No subsidy
